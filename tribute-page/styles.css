@@ -1,0 +1,143 @@
+:root {
+   
+    --primary: #73a0e4;
+    --white: #fff;
+    --light: #f8f9fa;
+    --dark: #111;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd;
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529;
+    --font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+body {
+    font-family: var(--font-sans-serif);
+    color: var(--gray-400);
+    background-color: var(--dark);
+    font-size: 1.125rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2.5rem
+}
+
+h1, h2, h3 {
+    color: var(--white);
+}
+
+h1 {
+    font-size: calc(1.5rem + 1.5vw);
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+h2, h3 {
+    margin-bottom: 0.3em;
+}
+
+p {
+    color: var(--gray-400);
+    margin-bottom: 0.5rem;
+}
+
+figure {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--gray-800);
+}
+
+figcaption {
+    text-align: center;
+    color: var(--gray-500);
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 5px auto;
+    border-radius: 5px;
+}
+
+main {
+    margin-bottom: 2rem;
+}
+
+.para {
+    margin: 1rem 0;
+    padding-bottom: 0.5rem;
+}
+
+blockquote {
+    font-size: 1.25rem;
+    font-style: italic;
+    margin-bottom: 2.5rem;
+    padding-left: 1.5rem;
+    border-left: 3px solid var(--white);
+}
+
+blockquote p {
+    margin-bottom: 0.5rem;
+}
+
+blockquote cite::before {
+    content: "-- ";
+}
+
+footer {
+    font-size: 1.125rem;
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--gray-800);
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 1.5rem;
+}
