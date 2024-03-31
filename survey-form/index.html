@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="survey form design with html css, html css survey-form for freeCodeCamp">
+    <meta name="keywords" content="survey-form, html css survey-form, html css form">
+    <title>Survey-form | freeCodeCamp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Survey Form (freeCodeCamp)</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform.</p>
+        </header>
+        <form id="survey-form" action="">
+            <!-- Name -->
+            <div class="form-control">
+                <label for="name" id="name-label" class="label">Your name<span class="important">*</span></label>
+                <input type="text" id="name" placeholder="Hossain M Rasel" required>
+            </div>
+            <!-- Email -->
+            <div class="form-control">
+                <label for="email" id="email-label" class="label">Your email<span class="important">*</span></label>
+                <input type="email" id="email" placeholder="example@example.com" required>
+            </div>
+            <!-- Number -->
+            <div class="form-control">
+                <label for="number" id="number-label" class="label">Your age</label>
+                <input type="number" id="number" min="18" max="95" placeholder="31">
+            </div>
+            <!-- Select -->
+            <div class="form-control">
+                <label for="dropdown" class="label">What is your current role?</label>
+                <select name="role" id="dropdown">
+                    <option value="0">Select your current role</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full time job</option>
+                    <option value="3">Part time job</option>
+                </select>
+            </div>
+            <!-- Radio -->
+            <div class="form-control flex-label">
+                <p class="label">How do you know about freeCodeCamp?</p>
+                <label for="radio-option-friend">
+                    <input type="radio" name="reference" id="radio-option-friend" value="by-friend" checked> By friend
+                </label>
+                <label for="radio-option-email">
+                    <input type="radio" name="reference" id="radio-option-email" value="by-email"> By email
+                </label>
+                <label for="radio-option-other">
+                    <input type="radio" name="reference" id="radio-option-other" value="by-other"> Other
+                </label>
+            </div>
+            <!-- Checkbox --> 
+            <div class="form-control flex-label">
+                <p class="label">Which courses do you love on freeCodeCamp? <small>(Check all that apply)</small></p>
+                <label for="course-1">
+                    <input type="checkbox" name="course-1" id="course-1" value="responsive-web-design"> Responsive Web Design
+                </label>
+                <label for="course-2">
+                    <input type="checkbox" name="course-2" id="course-2" value="javaScript"> JavaScript Algorithms and Data Structures
+                </label>
+                <label for="course-3">
+                    <input type="checkbox" name="course-3" id="course-3" value="front-end"> Front End Development Libraries
+                </label>
+                <label for="course-4">
+                    <input type="checkbox" name="course-4" id="course-4" value="data-visualization"> Data Visualization
+                </label>
+                <label for="course-5">
+                    <input type="checkbox" name="course-5" id="course-5" value="relational-database"> Relational Database 
+                </label>
+                <label for="course-6">
+                    <input type="checkbox" name="course-6" id="course-6" value="back-end"> Back End Development and APIs
+                </label>
+                <label for="course-7">
+                    <input type="checkbox" name="course-7" id="course-7" value="quality-assurance"> Quality Assurance
+                </label>
+                <label for="course-8">
+                    <input type="checkbox" name="course-8" id="course-8" value="scientific-computing"> Scientific Computing with Python
+                </label>
+                <label for="course-9">
+                    <input type="checkbox" name="course-9" id="course-9" value="data-analysis"> Data Analysis with Python
+                </label>
+                <label for="course-10">
+                    <input type="checkbox" name="course-10" id="course-10" value="informaion-security"> Information Security
+                </label>
+                <label for="course-11">
+                    <input type="checkbox" name="course-11" id="course-11" value="machine-learning"> Machine Lanrning with Python
+                </label>
+                <label for="course-12">
+                    <input type="checkbox" name="course-12" id="course-12" value="college-algebra"> College Algebra with Python
+                </label>
+            </div>
+            <!-- Textarea -->
+            <div class="form-control">
+                <label for="comment" class="label">Your comment about freeCodeCamp</label>
+                <textarea name="comment" id="comment" cols="30" rows="7" placeholder="Enter your comment here.."></textarea>
+            </div>
+            <!-- Submit Button -->
+            <input type="submit" id="submit" class="btn-submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
